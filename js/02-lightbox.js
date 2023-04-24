@@ -5,7 +5,7 @@ console.log(galleryItems);
 
 const galleryEl = document.querySelector('.gallery');
 const listItemMarkup = createListItemMarkup(galleryItems);
-galleryEl.innerHTML = listItemMarkup;
+galleryEl.insertAdjacentHTML('afterbegin', listItemMarkup);
 var lightbox = new SimpleLightbox('.gallery a', {
     captionPosition: "bottom",
     captionsData: "alt",
